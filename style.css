@@ -181,9 +181,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-.menu-list1 {
-	font-size: 1.2rem;
-}
 .section-menu > ul {
   display: flex;
   flex-direction: column;
