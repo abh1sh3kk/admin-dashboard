@@ -104,7 +104,7 @@ body {
 .container {
   background-color: var(--container-background);
   border-radius: 1.5rem;
-  
+
   padding: 0.5rem;
   height: 98%;
   border: 1.5px solid white;
@@ -140,6 +140,7 @@ body {
   flex: 0.5;
 }
 .nav-logo {
+	transition: 0.5s;
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -163,6 +164,7 @@ body {
   outline: none;
 }
 .nav-part-2 {
+	gap: 0.5rem;
   width: 15%;
   justify-content: space-around;
   align-items: center;
@@ -196,6 +198,7 @@ body {
   justify-content: center;
 }
 .menu-list {
+  /* transition: 0.1s; */
   /* background-color: fuchsia; */
 }
 
@@ -216,6 +219,7 @@ body {
   text-align: center;
 }
 .card > img {
+  transition: 0.5s;
   height: 10rem;
   box-shadow: 0.6px 0.8px 9px black;
   border-radius: 10%;
@@ -245,8 +249,8 @@ body {
   border: none;
 }
 .calendar-dates {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .calendar-dates > ul {
   margin: 2rem;
@@ -269,42 +273,96 @@ body {
 
 /* SIDEBAR RIGHT */
 .section-right {
-	padding: 5rem 1rem 1rem 3rem;
+  padding: 5rem 1rem 1rem 3rem;
   /* background-color:rgb(86, 36, 88);
 	color: white;
 	padding: 0.6rem; */
 }
-.announcements{
-	font-size: 2rem;
-	font-weight: bold;
+.announcements {
+  font-size: 2rem;
+  font-weight: bold;
 }
 .right-card-1 {
-	background-color: whitesmoke;
-	padding: 1rem;
-	border-radius: 1rem;
-	margin-top: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.site-maintenence, .community-share-day {
-	font-weight: bold;
-	margin-bottom: 0.8rem;
-	text-align: center;
+.site-maintenence,
+.community-share-day {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  text-align: center;
 }
-.hyaa, .hyaa-part-2 {
-	text-align: center;
+.hyaa,
+.hyaa-part-2 {
+  text-align: center;
 }
 .line {
-	height: 1px;
-	width: 90%;
-	margin: 0.5rem 0;
-	background-color: #2e2763;
+  height: 1px;
+  width: 90%;
+  margin: 0.5rem 0;
+  background-color: #2e2763;
 }
 
-@media (max-width: 700px) {
+/* ################################################################ */
+
+@media (max-width: 1000px) {
+  .nav-logo {
+    font-size: 2rem;
+  }
+  .card > img {
+    height: 8rem;
+  }
+  .image-name {
+    margin: 0.5rem 0 0.3rem 0;
+  }
+  .three-icons {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 928px) {
 	body {
-		background-color: red;
-		color: green;
+		background-repeat: x-repeat;
 	}
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+  }
+  .search-box {
+	display: none;
+}
+  .section-menu {
+    align-items: center;
+  }
+  .section-menu > ul {
+	  margin-top: 1rem;
+    width: 90%;
+  }
+  .menu-list {
+    background-color: #2e542d;
+    color: white;
+    padding: 0.7rem 0rem;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .fa-github {
+    display: none;
+  }
+  .card > img {
+    height: 10rem;
+  }
+  .image-name {
+    margin: 1rem 0 0.6rem 0;
+  }
+  .three-icons {
+    font-size: 1rem;
+  }
 }
