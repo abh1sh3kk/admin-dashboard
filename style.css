@@ -313,6 +313,7 @@ body {
 @media (max-width: 1000px) {
   .nav-logo {
     font-size: 2rem;
+    letter-spacing: none;
   }
   .card > img {
     height: 8rem;
