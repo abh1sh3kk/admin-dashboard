@@ -140,7 +140,7 @@ body {
   flex: 0.5;
 }
 .nav-logo {
-	transition: 0.5s;
+  transition: 0.5s;
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -164,7 +164,7 @@ body {
   outline: none;
 }
 .nav-part-2 {
-	gap: 0.5rem;
+  gap: 0.5rem;
   width: 15%;
   justify-content: space-around;
   align-items: center;
@@ -326,9 +326,9 @@ body {
 }
 
 @media (max-width: 928px) {
-	body {
-		background-repeat: x-repeat;
-	}
+  body {
+    background-repeat: x-repeat;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -336,13 +336,13 @@ body {
     border: none;
   }
   .search-box {
-	display: none;
-}
+    display: none;
+  }
   .section-menu {
     align-items: center;
   }
   .section-menu > ul {
-	  margin-top: 1rem;
+    margin-top: 1rem;
     width: 90%;
   }
   .menu-list {
@@ -353,7 +353,7 @@ body {
     font-size: 1.5rem;
     width: 100%;
   }
-  .fa-github {
+  .github-logo {
     display: none;
   }
   .card > img {
