@@ -7,39 +7,30 @@
 :root {
   /* color list */
 
-  --color-test: #fdf4ff;
-  --color-test: #fae8ff;
-  --color-test: #f5d0fe;
-  --color-test: #f0abfc;
-  --color-test: #e879f9;
-  --color-test: #d946ef;
-  --color-test: #c026d3;
-  --color-test: #a21caf;
-  --color-test: #86198f;
-  --color-test: #701a75;
-
-  --color-test-2: #faf5ff;
-  --color-test-2: #f3e8ff;
-  --color-test-2: #e9d5ff;
-  --color-test-2: #d8b4fe;
-  --color-test-2: #c084fc;
-  --color-test-2: #a855f7;
-  --color-test-2: #9333ea;
-  --color-test-2: #7e22ce;
-  --color-test-2: #6b21a8;
-  --color-test-2: #581c87;
-
   /* GRADIENT TEST 1*/
+  /* --main-gradient: linear-gradient(
+    5deg,
+    rgba(241, 0, 255, 1) 0%,
+    rgba(46, 39, 99, 1) 100%
+  );
+  --background-color: rgb(241, 0, 255);
+  --primary-text-color: black;
+  --container-background: rgb(241, 0, 255, 0.6); */
+
+  /* GRADIENT TEST 2*/
+  
   /* --main-gradient: linear-gradient(
     315deg,
     rgba(192, 82, 193, 1) 0%,
     rgba(240, 179, 246, 1) 74%
   );
   --background-color: rgb(192, 82, 193);
-  --primary-text-color: yellow;
-  --container-background: rgb(241, 0, 255, 0.6); */
+  --primary-text-color: black;
+  --container-background: rgb(241, 0, 255, 0.2); */
 
-  /* GRADIENT TEST 2*/
+
+
+  /* THEME 1 */
   --main-gradient: linear-gradient(
     315deg,
     rgba(187, 193, 82, 1) 0%,
@@ -47,16 +38,6 @@
   );
   --background-color: rgb(187, 193, 82);
   --container-background: rgb(241 255 255 / 39%);
-
-  /* THEME 1 */
-  /* --main-gradient: linear-gradient(
-    5deg,
-    rgba(241, 0, 255, 1) 0%,
-    rgba(46, 39, 99, 1) 100%
-  );
-  --background-color: rgb(241, 0, 255);
-  --primary-text-color: yellow;
-  --container-background: rgb(241, 0, 255, 0.6); */
 
   --primary-font: Roboto, "Helvetica", sans-serif;
   --active-date: #f7755c;
@@ -313,7 +294,6 @@ body {
 @media (max-width: 1000px) {
   .nav-logo {
     font-size: 2rem;
-    letter-spacing: none;
   }
   .card > img {
     height: 8rem;
@@ -354,7 +334,7 @@ body {
     font-size: 1.5rem;
     width: 100%;
   }
-  .section-menu > .github-logo {
+  .github-logo {
     display: none;
   }
   .card > img {
