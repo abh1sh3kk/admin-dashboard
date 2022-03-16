@@ -5,46 +5,22 @@
   list-style-type: none;
 }
 :root {
-  /* color list */
-
-  /* GRADIENT TEST 1*/
-  /* --main-gradient: linear-gradient(
-    5deg,
-    rgba(241, 0, 255, 1) 0%,
-    rgba(46, 39, 99, 1) 100%
-  );
-  --background-color: rgb(241, 0, 255);
-  --primary-text-color: black;
-  --container-background: rgb(241, 0, 255, 0.6); */
-
-  /* GRADIENT TEST 2*/
-  
-  /* --main-gradient: linear-gradient(
-    315deg,
-    rgba(192, 82, 193, 1) 0%,
-    rgba(240, 179, 246, 1) 74%
-  );
-  --background-color: rgb(192, 82, 193);
-  --primary-text-color: black;
-  --container-background: rgb(241, 0, 255, 0.2); */
-
-
-
   /* THEME 1 */
-  --main-gradient: linear-gradient(
-    315deg,
-    rgba(187, 193, 82, 1) 0%,
-    rgba(227, 246, 179, 1) 74%
-  );
-  --background-color: rgb(187, 193, 82);
-  --container-background: rgb(241 255 255 / 39%);
 
+  --background-color: #7eff98;
+  --container-background: rgb(241 255 255 / 39%);
+--primary-text-color: black;
   --primary-font: Roboto, "Helvetica", sans-serif;
-  --active-date: #f7755c;
+  --active-date: #ff0044;
+  --container-border: white;
+  --text-shadow-nav: grey;
+  --logo-hightlight: #ff0044;
+  --menu-color-mobile: #ff2b49;
+  --card-background-color: #73ff98;
 }
 body {
   background: var(--background-color);
-  background: var(--main-gradient);
+  /* background: var(--main-gradient); */
   /* background-repeat: no-repeat; */
   height: 100vh;
   color: var(--primary-text-color);
@@ -88,7 +64,7 @@ body {
 
   padding: 0.5rem;
   height: 98%;
-  border: 1.5px solid white;
+  border: 1.5px solid var(--container-border);
   /* box-shadow: 0.2px 0.6px 14px #373737; */
   flex: 1;
 }
@@ -125,10 +101,10 @@ body {
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  text-shadow: 3px 2px 15px gray;
+  text-shadow: 3px 2px 15px var(--text-shadow-nav);
 }
 .oo {
-  color: rgb(0, 122, 27);
+  color: var(--logo-hightlight);
 }
 .search-box {
   padding: 0.2rem 0.5rem;
@@ -228,6 +204,8 @@ body {
   font-family: inherit;
   border-radius: 2rem;
   border: none;
+  background-color: var(--menu-color-mobile);
+  color: white;
 }
 .calendar-dates {
   display: flex;
@@ -244,7 +222,7 @@ body {
   padding: 0.6rem;
   border-radius: 20px;
   background-color: var(--active-date);
-  color: black;
+  color: white;
 }
 .below-day {
   font-weight: bold;
@@ -264,7 +242,9 @@ body {
   font-weight: bold;
 }
 .right-card-1 {
-  background-color: whitesmoke;
+  background-color: var(--card-background-color);
+  color: var(--primary-text-color);
+  box-shadow: 1px 1px 3px black;
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 1.5rem;
@@ -286,7 +266,7 @@ body {
   height: 1px;
   width: 90%;
   margin: 0.5rem 0;
-  background-color: #2e2763;
+  background-color: var(--primary-text-color);
 }
 
 /* ################################################################ */
@@ -327,14 +307,14 @@ body {
     width: 90%;
   }
   .menu-list {
-    background-color: #2e542d;
+    background-color: var(--menu-color-mobile);
     color: white;
     padding: 0.7rem 0rem;
     border-radius: 0.8rem;
     font-size: 1.5rem;
     width: 100%;
   }
-  .github-logo {
+  .section-menu > i{
     display: none;
   }
   .card > img {
